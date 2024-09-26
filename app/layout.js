@@ -25,11 +25,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar/>
-        <main>
-          {children}
-        </main>
-        <Footer/>
+        <div className="container">
+          <Navbar/>
+          <main className="flex-1 py-6">
+            {children}
+          </main>
+          <Footer/>
+        </div>
       </body>
     </html>
   );
