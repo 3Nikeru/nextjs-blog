@@ -6,7 +6,7 @@ import Links from './links/Links'
 const Navbar = () => {
   return (
     <div className={styles.container}>
-      <Link href='/'>Agency</Link>
+      <Link href='/' className={styles.logo}>Agency</Link>
       <div>
         <Links/>
       </div>

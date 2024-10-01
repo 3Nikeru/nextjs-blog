@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+    max-height: 100px;
+    align-items: center;
+}
+.logo{
+    font-weight: 700;
+    color: gray;
+}
+.copyright{
+    font-size: 12px;
+    color: gray;
+}
