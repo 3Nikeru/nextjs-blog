@@ -26,7 +26,7 @@ const blogPage = async({searchParams}) => {
     <>
       <div className={styles.container}>
         {posts.map((post, index) => (
-          <div className={styles.post} key={post.id}>
+          <div className={styles.post}>
             <PostCard post={post} index={index}/>
           </div>
         ))}
