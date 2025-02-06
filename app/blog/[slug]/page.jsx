@@ -29,7 +29,7 @@ const singlePage = async({params, searchParams}) => {
             width={64}
             height={64}
             />
-            <PostUser userId={post.id}/>
+            <PostUser userId={post.userId}/>
         </div>
         <div className={styles.detailText}>
             <span className={styles.detailTitle}>Published</span>

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from './home.module.css'
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -8,8 +9,8 @@ export default function Home() {
         <h1 className={styles.title}>Creative Thoughts Agency</h1>
         <p className={styles.desc}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, consectetur eius ut ab debitis nostrum deserunt facilis ullam!</p>
         <div className={styles.buttons}>
-          <button className={styles.button}>Learn More</button>
-          <button className={styles.button}>Contact</button>
+          <Link href='/blog/' className={styles.button}>Learn More</Link>
+          <Link href='/contact/' className={styles.button}>Contact</Link>
         </div>
         <div className={styles.brands}>
           <Image 
