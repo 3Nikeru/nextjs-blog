@@ -9,7 +9,7 @@ export default function Home() {
         <h1 className={styles.title}>Creative Thoughts Agency</h1>
         <p className={styles.desc}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, consectetur eius ut ab debitis nostrum deserunt facilis ullam!</p>
         <div className={styles.buttons}>
-          <Link href='/blog/' className={styles.button}>Learn More</Link>
+          <Link href='/about/' className={styles.button}>Learn More</Link>
           <Link href='/contact/' className={styles.button}>Contact</Link>
         </div>
         <div className={styles.brands}>
