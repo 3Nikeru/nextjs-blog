@@ -5,7 +5,7 @@ import styles from './contact.module.css'
 import Image from 'next/image'
 
 
-const contactPage = () => {
+const СontactPage = () => {
   const formRef = useRef(null);
   const tnxRef = useRef(null);
   const thankYou = (e)=>{
@@ -63,4 +63,4 @@ const contactPage = () => {
   )
 }
 
-export default contactPage
+export default СontactPage
