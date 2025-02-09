@@ -17,7 +17,6 @@ const getTotalPosts = async () => {
   return response.json();
 };
 
-// 🔥 Генерируем статические пути (например, /blog/page-1, /blog/page-2, ...)
 export const generateStaticParams = async () => {
   const totalPosts = await getTotalPosts();
   const totalPages = Math.ceil(totalPosts.length / PostPerPage);
