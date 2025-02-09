@@ -36,7 +36,7 @@ const Pagination = ({currentPage, totalPages}) => {
             </a>
         )}
         {pages.map((p, index)=> (
-            <a href={`?page=${p}`} className={`py-2 px-4 mx-1 rounded ${
+            <a href={`?page=${p}`} key={p} className={`py-2 px-4 mx-1 rounded ${
             p === currentPage ? 'bg-blue-500 text-white' : 'bg-gray-300 text-black hover:bg-gray-400'}`}>
                 {p}
             </a>
