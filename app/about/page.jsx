@@ -3,7 +3,7 @@ import styles from './about.module.css'
 import Image from 'next/image'
 
 
-const aboutPage = () => {
+const AboutPage = () => {
   return (
     <div className={styles.container}>
         <div className={styles.textContainer}>
@@ -37,4 +37,4 @@ const aboutPage = () => {
   )
 }
 
-export default aboutPage
+export default AboutPage

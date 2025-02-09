@@ -21,7 +21,6 @@ function getPaginationPages(currentPage, totalPages){
         dots.push(page);
         lastPage = page;
     })
-    console.log(dots);
     
     return dots;
 }
