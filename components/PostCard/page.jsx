@@ -1,3 +1,5 @@
+'use client';  // Добавь эту строку в начале файла
+
 import Image from "next/image"
 import Link from "next/link"
 import styles from './postcard.module.css'

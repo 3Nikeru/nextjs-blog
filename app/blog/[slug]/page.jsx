@@ -4,7 +4,6 @@ import PostUser from "@/components/PostUser/page";
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
 
-// Динамическая загрузка компонента PostImageClient с Suspense
 const PostImageClient = dynamic(() => import('@/components/PostImageClient'), { ssr: false });
 
 const getTotalPosts = async (slug) => {
@@ -29,7 +28,6 @@ const SinglePage = async ({ params }) => {
   return (
     <div className={styles.container}>
       <div className={styles.imgContainer}>
-        {/* Обёртываем PostImageClient в Suspense */}
         <Suspense fallback={<div>Loading image...</div>}>
           <PostImageClient alt={post.title} />
         </Suspense>
